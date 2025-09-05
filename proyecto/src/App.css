@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.sponsors {
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 40px;
+}
+
+.row img {
+  max-height: 50px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%); /* logos en negro */
+  transition: transform 0.2s ease-in-out;
+}
+
+.row img:hover {
+  transform: scale(1.1); /* efecto zoom */
+}
